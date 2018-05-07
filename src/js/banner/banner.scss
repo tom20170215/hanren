@@ -1,0 +1,33 @@
+.content1 {
+	height: 1020px;
+	background: url(../../images/banner.png) no-repeat center;
+
+	.cont1 {
+		width: 1013px;
+		height: 1020px;
+		margin: 0 auto;
+		position: relative;
+
+		a {
+			display: block;
+			width: 37px;
+			height: 37px;
+			position: absolute;
+		}
+
+		a.ins {
+			bottom: 50px;
+			left: 400px;
+		}
+		a.fb{
+			bottom: 50px;
+			left:500px;
+		}
+		a.tw{
+			bottom: 50px;
+			left:600px;
+		}
+
+	}
+
+}

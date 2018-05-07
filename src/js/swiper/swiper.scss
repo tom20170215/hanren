@@ -1,0 +1,57 @@
+@import 'node_modules/swiper/dist/css/swiper';
+
+.content2 {
+	margin: 10px auto 10px;
+
+	.comwidth {
+		width: 1226px;
+		margin: auto;
+		overflow: hidden;
+		.title{
+			height:119px;
+			background:url(../../images/title.png) no-repeat 0px 0px/1226px;
+		}
+		.swiperbox {
+			background: url('../../images/kuang.png') no-repeat 50% 50%/498px 398px;
+			width: 658px;
+			height: 511px;
+			margin: 0 20px 0 20px;
+			float: left;
+			position: relative;
+
+			.swiper-container {
+				position: absolute;
+				width: 450px;
+				top: 133px;
+				left: 103px;
+				.black{
+					width:33px;
+					height:32px;
+					background:url(../../images/noactive.png);
+				}
+			}
+
+			.desc {
+				position: absolute;
+				left:300px;
+				bottom: 0px;
+
+				p {
+					font-size: 30px;
+					font-weight: bold;
+					text-align: center;
+					font-family: Microsoft Yahei, Arial, Sans-serif;
+					color:#B80808;
+				}
+
+			}
+
+		}
+
+		img {
+			margin: auto;
+		}
+
+	}
+
+}
