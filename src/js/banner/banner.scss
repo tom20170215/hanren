@@ -1,13 +1,12 @@
 .content1 {
-	height: 1020px;
 	background: url(../../images/banner.png) no-repeat center/100% 100% ;
 
 	.cont1 {
-		width: 1013px;
+		width: 1226px;
 		height: 1020px;
 		margin: 0 auto;
 		position: relative;
-
+		overflow:hidden;
 		a {
 			display: block;
 			width: 37px;
@@ -17,15 +16,15 @@
 
 		a.ins {
 			bottom: 100px;
-			left: 400px;
+			left: 450px;
 		}
 		a.fb{
 			bottom: 30px;
-			left:420px;
+			left:520px;
 		}
 		a.tw{
 			bottom: 100px;
-			left:600px;
+			left:750px;
 		}
 
 	}
