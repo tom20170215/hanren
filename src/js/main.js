@@ -15,6 +15,5 @@ $(function() {
 	$("#wrap").append($(swiper.tpl));
 	swiper.init();
 	$("#wrap").append($(video.tpl));
-	video.init();
 	$("#wrap").append($(news.tpl));
 })
