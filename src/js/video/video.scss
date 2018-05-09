@@ -1,0 +1,36 @@
+.content4 {
+	background: url(../../images/video_bg.png) center no-repeat;
+	min-width: 100%;
+
+	.comwidth {
+		width: 1226px;
+		height: 937px;
+		margin: auto;
+		overflow: hidden;
+
+		.title {
+			img {
+				width: 1226px;
+				height: 70px;
+			}
+
+		}
+
+		.box {
+			margin: 100px auto 0px;
+			background: url(../../images/videobox.png) center no-repeat;
+			height: 568px;
+			position: relative;
+
+			iframe {
+				position: absolute;
+				left: 200px;
+				top: 50px;
+			}
+
+			}
+
+		}
+
+	}
+

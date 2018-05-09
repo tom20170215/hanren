@@ -2,41 +2,51 @@
 
 .content3 {
 	margin: 0 auto;
-	background: url(../../images/3.png) no-repeat 0px 0px / 100% 100%;
+	background: url(../../images/3.png) no-repeat center;
+	min-width: 100%;
 
 	.comwidth {
 		width: 1226px;
 		height: 928px;
 		margin: auto;
 		overflow: hidden;
-		// position:relative;
-		.swiper-container {
-			width:560px;
-			height:379px;
-			margin:0;
-			top:384px;
-			left:100px;
-			.swiper-pagination-bullets {
-				span{
-					margin:0 17px 0 1px;
+
+		.box {
+			width:744px;
+			background:url(../../images/swiperbg.png) no-repeat center;
+			margin-top:300px;
+			margin-left:50px;
+			.swiper-container {
+				width: 560px;
+				height: 379px;
+				margin: 0;
+				top:50px;
+				left:70px;
+				.swiper-pagination-bullets {
+					span {
+						margin: 0 17px 0 1px;
+					}
+
 				}
+
+				.black {
+					width: 32px;
+					height: 32px;
+					background: url(../../images/noactive.png);
+					display: inline-block;
+				}
+
+				.red {
+					width: 32px;
+					height: 32px;
+					background: url(../../images/active.png);
+					display: inline-block;
+				}
+
 			}
 
-			.black {
-				width: 32px;
-				height: 32px;
-				background: url(../../images/noactive.png);
-				display: inline-block;
-			}
-
-			.red {
-				width: 32px;
-				height: 32px;
-				background: url(../../images/active.png);
-				display: inline-block;
-			}
-			
 		}
+
 	}
 
 }
