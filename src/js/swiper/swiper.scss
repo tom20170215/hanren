@@ -23,10 +23,33 @@
 				top:50px;
 				left:70px;
 				.swiper-pagination-bullets {
-					span {
+					span{
 						margin: 0 17px 0 1px;
+						position:relative;
+						&:after{
+							content:"";
+							display:inline-block;
+							width:31px;
+							height:7px;
+							background:url(../../images/circle.png) center no-repeat;
+							position:absolute;
+							top:12px;
+							left: 25px;
+						}
+						&:first-child:before{
+							content:"";
+							display:inline-block;
+							width:31px;
+							height:7px;
+							background:url(../../images/circle.png) center no-repeat;
+							position:absolute;
+							top:12px;
+							left: -24px;
+						}
+						&:hover{
+							cursor:pointer;
+						}
 					}
-
 				}
 
 				.black {

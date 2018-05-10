@@ -1,31 +1,21 @@
 .content1 {
 	background: url(../../images/banner.png) no-repeat center;
-	min-width:100%;
+	min-width: 100%;
 
 	.cont1 {
 		width: 1226px;
 		height: 1020px;
 		margin: 0 auto;
 		position: relative;
-		overflow:hidden;
+		overflow: hidden;
+
 		a {
 			display: block;
 			width: 37px;
 			height: 37px;
 			position: absolute;
-		}
-
-		a.ins {
-			bottom: 100px;
-			left: 450px;
-		}
-		a.fb{
-			bottom: 30px;
-			left:520px;
-		}
-		a.tw{
-			bottom: 100px;
-			left:750px;
+			bottom: 208px;
+			left: 520px;
 		}
 
 	}

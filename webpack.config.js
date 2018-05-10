@@ -54,6 +54,7 @@ module.exports = env => {
 			compress: true,
 			inline:true,
 			port: 9200,
+			host:"192.168.1.134"
 			// clientLogLevel: 'none'
 			// quiet: true
 		},

@@ -14,7 +14,9 @@ export default {
 			pagination: {
 				el: '.swiper-pagination',
 				bulletClass:'black',
-				bulletActiveClass:'red'
+				bulletActiveClass:'red',
+				clickable:true,
+				clickableClass:'my-pagination-clickable'
 			},
 			navigation: {
 				nextEl: '.swiper-button-next',

@@ -1,9 +1,26 @@
-.content5{
-	background:url(../../images/news.png) center no-repeat;
-	.comwidth{
-		width:1226px;
-		height:1565px;
-		margin:0 auto;
-		overflow:hidden;
+.content5 {
+	background: url(../../images/news.png) center no-repeat;
+
+	.comwidth {
+		width: 1226px;
+		margin: 0 auto;
+		overflow: hidden;
+
+		.show {
+			height: 1571px;
+			background: url(../../images/fbshow.png) center no-repeat;
+			overflow:hidden;
+			position:relative;
+			iframe {
+				width: 916px;
+				height: 1163px;
+				position:absolute;
+				top:357px;
+				left:162px;
+			}
+
+		}
+
 	}
+
 }

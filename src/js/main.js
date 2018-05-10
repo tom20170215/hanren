@@ -5,15 +5,20 @@ import swiper from './swiper/swiper';
 import menpai from './menpai/menpai';
 import video from './video/video';
 import news from './news/new';
+import footer from './footer/footer';
+import back from './backbtn/back';
 
 require('../css/reset.scss');
 
 $(function() {
-	// $("#wrap").append($(nav.tpl));
+	$("#wrap").append($(back.tpl));
+	back.init();
 	$("#wrap").append($(banner.tpl));
 	$("#wrap").append($(menpai.tpl));
 	$("#wrap").append($(swiper.tpl));
 	swiper.init();
 	$("#wrap").append($(video.tpl));
+	video.init();
 	$("#wrap").append($(news.tpl));
+	$("#wrap").append($(footer.tpl));
 })
