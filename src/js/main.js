@@ -15,10 +15,11 @@ $(function() {
 	back.init();
 	$("#wrap").append($(banner.tpl));
 	$("#wrap").append($(menpai.tpl));
+	menpai.App();
 	$("#wrap").append($(swiper.tpl));
 	swiper.init();
-	$("#wrap").append($(video.tpl));
-	video.init();
+	// $("#wrap").append($(video.tpl));
+	// video.init();
 	$("#wrap").append($(news.tpl));
 	$("#wrap").append($(footer.tpl));
 })

@@ -17,11 +17,7 @@ export default {
 				bulletActiveClass:'red',
 				clickable:true,
 				clickableClass:'my-pagination-clickable'
-			},
-			navigation: {
-				nextEl: '.swiper-button-next',
-				prevEl:  '.swiper-button-prev',
-			},
+			}
 		});
 	}
 }

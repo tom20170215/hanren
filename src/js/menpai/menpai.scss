@@ -20,18 +20,42 @@
 		}
 
 		.type {
-			margin:300px auto 0px;
+			margin: 300px auto 0px;
+
 			li {
 				float: left;
-				margin-right:32.5px;
+				margin-right: 32.5px;
 			}
 
 		}
-		.sword{
-			margin:0px auto ;
-			background:url(../../images/sword_init.png) center/100% no-repeat;
-			height:508px;
+
+		.sword {
+			margin: 0px auto;
+			background: url(../../images/sword_init.png) center/100% no-repeat;
+			height: 508px;
 		}
+
+	}
+
+}
+
+.modal-dialog {
+	max-width: 1364px !important;
+
+	.modal-content {
+		background: url(../../images/modalbg.png) 0 0  no-repeat;
+		height: 830px;
+
+		.modal-body {
+			ul {
+				li {
+					float: left;
+				}
+
+			}
+
+		}
+
 	}
 
 }

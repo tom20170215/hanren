@@ -77,7 +77,7 @@ module.exports = env => {
 				use: [{
 					loader: 'url-loader',
 					options: {
-						limit: 8192,
+						limit: 1024,
 						name: 'img/[name].[ext]',
 						publicPath: '../'
 					}

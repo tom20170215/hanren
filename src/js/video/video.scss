@@ -21,11 +21,15 @@
 			background: url(../../images/videobox.png) center no-repeat;
 			height: 568px;
 			position: relative;
-
+			.swiper-container{
+				width:776px;
+				height:434px;
+				top:31px;
+			}
 			iframe {
-				position: absolute;
-				left: 200px;
-				top: 50px;
+				// position: absolute;
+				// left: 200px;
+				// top: 50px;
 			}
 
 			}
