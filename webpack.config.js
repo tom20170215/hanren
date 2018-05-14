@@ -73,7 +73,7 @@ module.exports = env => {
 					fallback: "style-loader"
 				})
 			}, {
-				test: /\.(jpg|svg|gif|png)$/,
+				test: /\.(jpg|svg|gif|png|ttf|svg|eot|)$/,
 				use: [{
 					loader: 'url-loader',
 					options: {
@@ -99,5 +99,5 @@ module.exports = env => {
 			]
 		},
 		plugins
-	}
-}
+	};
+};

@@ -1,5 +1,4 @@
 import 'jquery';
-// import nav from './nav/nav';
 import banner from './banner/banner';
 import swiper from './swiper/swiper';
 import menpai from './menpai/menpai';
@@ -18,8 +17,8 @@ $(function() {
 	menpai.App();
 	$("#wrap").append($(swiper.tpl));
 	swiper.init();
-	// $("#wrap").append($(video.tpl));
-	// video.init();
+	$("#wrap").append($(video.tpl));
+	video.init();
 	$("#wrap").append($(news.tpl));
 	$("#wrap").append($(footer.tpl));
 })

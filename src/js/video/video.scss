@@ -16,16 +16,17 @@
 
 		}
 
-		.box {
+		.videobox {
 			margin: 100px auto 0px;
 			background: url(../../images/videobox.png) center no-repeat;
 			height: 568px;
 			position: relative;
 			.swiper-container{
 				width:776px;
-				height:434px;
-				top:31px;
+				height:464px;
+				top:44px;
 			}
+			
 			iframe {
 				// position: absolute;
 				// left: 200px;

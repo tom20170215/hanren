@@ -11,6 +11,7 @@
   },
   "author": "",
   "license": "ISC",
+  "dependencies": {},
   "devDependencies": {
     "bootstrap": "^4.1.1",
     "clean-webpack-plugin": "^0.1.19",
@@ -18,6 +19,7 @@
     "expose-loader": "^0.7.5",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^1.1.11",
+    "fontmin": "^0.9.7-beta",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "jquery": "^3.3.1",

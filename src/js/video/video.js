@@ -17,14 +17,9 @@ export default {
 		for(var i = 0;i<length;i++){
 			playVideo(swiperlist[i]);
 		}
-		var videoSwiper = new Swiper(".swiper-container", {
+		var videoSwiper = new Swiper(".swiper-video-container", {
 			autoplay: true,
 			loop: true,
-			pagination: {
-				el: ".swiper-pagination",
-				clickable: true,
-				clickableClass: 'my-pagination-clickable'
-			},
 			//轮播时暂停所有视频
 			on: {
 				slideChangeTransitionEnd: function() {
