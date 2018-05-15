@@ -20,4 +20,4 @@ $(function() {
 	$("#wrap").append($(video.tpl));
 	$("#wrap").append($(news.tpl));
 	$("#wrap").append($(footer.tpl));
-})
+});
