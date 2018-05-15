@@ -4,16 +4,14 @@ require('./custom.scss');
 require('./menpai.scss');
 
 
-//选择门派
-function selectMP() {
-
-}
 
 const App = function() {
 	var btn = $(".content2 button"); //打开modal按钮
 	var mps = $(".mplist"); //门派list
-	var okBtn = $(".confirm");//确认按钮
+	var okBtn = $(".confirm"); //确认按钮
 	var closeBtn = $(".close");
+
+	//加载图片资源
 	let imgArr = [];
 	imgArr.push(require("../../images/item1red.png"));
 	imgArr.push(require("../../images/item2red.png"));
@@ -68,20 +66,32 @@ const App = function() {
 		}
 	});
 
-	//点击打开模态框
+
+	//打开门派模态框
 	btn.click(function() {
-		$('#myModal').on('shown.bs.modal', function() {
-			$('.modal-footer button').focus();
-		});
 		$("#myModal").modal({
 			backdrop: 'static'
 		});
 	});
-	//点击确认提交
-	okBtn.click(function(){
-		// alert("confirm success!");
-		closeBtn.click();
 
+
+	//确认提交
+	okBtn.click(function() {
+		//4个图片的名字中没有red时，alert提示
+		var name1 = $(".xuanshui").attr("src");
+		var name2 = $(".qiyun").attr("src");
+		var name3 = $(".chilong").attr("src");
+		var name4 = $(".tianwei").attr("src");
+		var names = name1 + name2 + name3 + name4;
+		var patt = new RegExp("red");
+		if (!patt.test(names)) {
+			alert("少俠不要著急，请先挑選門派");
+			return;
+		}
+		closeBtn.click();
+		$("#email").modal({
+			backdrop: 'static'
+		});
 	});
 
 
