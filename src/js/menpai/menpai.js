@@ -64,6 +64,11 @@ const App = function() {
 					break;
 			}
 		}
+
+		//更改描述文字
+		var $li = $(target).parents("li");
+		var index = $li.index();
+		$("div.descbox>p").eq(index).show().siblings().hide();
 	});
 
 

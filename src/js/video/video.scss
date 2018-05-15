@@ -21,12 +21,15 @@
 			background: url(../../images/videobox.png) center no-repeat;
 			height: 568px;
 			position: relative;
+			.videolist {
+				position:absolute;
+				top:178px;
+				left:165px;
+				.videoitem {
+					float: left;
+					margin-right:50px;
+				}
 
-			.carousel {
-				width:786px;
-				height:392px;
-				margin:0 auto;
-				top:78px;
 			}
 
 		}
