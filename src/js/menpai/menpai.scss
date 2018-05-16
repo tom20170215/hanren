@@ -1,9 +1,15 @@
-@font-face{
-	font-family:myFont;
-	src:url("../../fonts.ttf")format("ttf");
-	font-weight:bold;
-}
+@font-face {
+	font-family: "fonts";
+	src: url("../../fonts/fonts.eot"); /* IE9 */
+	src: url("../../fonts/fonts.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
 
+	url("../../fonts/fonts.woff") format("woff"), /* chrome、firefox */
+	url("../../fonts/fonts.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
+
+	url("../../fonts/fonts.svg#fonts") format("svg"); /* iOS 4.1- */
+	font-style: normal;
+	font-weight: bold;
+}
 
 .content2 {
 	background: url(../../images/2.png) center;
@@ -32,7 +38,7 @@
 			li {
 				float: left;
 				margin-right: 54.5px;
-				margin-left:45px;
+				margin-left: 45px;
 			}
 
 		}
@@ -53,61 +59,131 @@
 	.modal-content {
 		background: url(../../images/modalbg.png) 0 0  no-repeat;
 		height: 830px;
-		.modal-header{
-			padding:0px;
-			border:none;
-			display:block;
-			.close{
-				width:50px;
-				height:50px;
-				padding:0px;
-				margin:0px;
-				cursor:pointer;
-				float:right;
-				background-color:transparent;
-				img{
-					margin:auto;
+
+		.modal-header {
+			padding: 0px;
+			border: none;
+			display: block;
+
+			.close {
+				width: 50px;
+				height: 50px;
+				padding: 0px;
+				margin: 0px;
+				cursor: pointer;
+				float: right;
+				background-color: transparent;
+
+				img {
+					margin: auto;
 				}
+
 			}
+
 		}
+
 		.modal-body {
-			width:1133px;
-			padding:0px;
-			flex-grow:0;
-			top:266px;
-			left:110px;
+			width: 1133px;
+			padding: 0px;
+			flex-grow: 0;
+			top: 266px;
+			left: 110px;
+
 			ul {
 				li {
 					float: left;
-					margin:0 42.25px 0 43px;
+					margin: 0 42.25px 0 43px;
 				}
 
 			}
-			.descbox{
-				height:100px;
-				margin:10px;
-				p{
-					text-indent:48px;
-					font-family:myFont;
+
+			.descbox {
+				// height: 100px;
+				margin: 10px;
+
+				p {
+					text-indent: 48px;
+					font-family: fonts;
+					font-size: 30px;
+					line-height: 64px;
+					font-weight: bold;
 				}
+
 			}
-		}
-		.modal-footer{
-			justify-content:center;
-			border:none;
-			margin-top:398px;
-			button{
-				background-color:transparent;
-				cursor:pointer;
+
+			input {
+				border: none;
+				margin-top: 24px;
+				width: 564px;
+				height: 104px;
+				background: url(../../images/border.png) center/99% no-repeat;
+				text-align: center;
+				font-family: fonts;
+				font-size: 30px;
+				position: relative;
+				left: 310px;
 			}
+
+			input::-webkit-input-placeholder {
+				color: #BABABA;
+				font-weight:bold;
+			}
+
+			input::-moz-input-placeholder {
+				color: #BABABA;
+			}
+
+			input::-ms-input-placeholder {
+				color: #BABABA;
+			}
+
+			button {
+				position: relative;
+				left: 321px;
+				width:223px;
+				height:72px;
+				background:url(../../images/getcode.png);
+				font-family:fonts;
+				font-size:31px;
+			}
+			label{
+				position:absolute;
+				color:#962626;
+				font:{
+					family:fonts;
+					size:30px;
+				}	
+			}
+			label.email{
+				top:60px;
+				left:126px;
+			}
+			label.code{
+				top:186px;
+				left:115px;
+			}
+
 		}
+
+		.modal-footer {
+			position: absolute;
+			bottom: 58px;
+			left: 581px;
+			border: none;
+
+			button {
+				background-color: transparent;
+			}
+
+		}
+
 	}
 
 }
-#email{
-	.modal-content{
-		background:url(../../images/emailbg.png) 0 0 no-repeat;
+
+#email {
+	.modal-content {
+		background: url(../../images/emailbg.png) 0 0 no-repeat;
 	}
+
 }
-
-

@@ -123,3 +123,5 @@ function GameOrder(gameId, debug) {
         return queryString.substr(0, queryString.length - 1);
     }
 }
+
+export default GameOrder;

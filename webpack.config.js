@@ -37,7 +37,7 @@ module.exports = env => {
 					NODE_ENV: '"production"'
 				}
 			})
-		)
+		);
 	}
 	return {
 		devtool:'inline-source-map',
@@ -73,7 +73,7 @@ module.exports = env => {
 					fallback: "style-loader"
 				})
 			}, {
-				test: /\.(jpg|svg|gif|png|ttf|svg|eot|)$/,
+				test: /\.(jpg|svg|gif|png|ttf|svg|eot|woff|)$/,
 				use: [{
 					loader: 'url-loader',
 					options: {
