@@ -1,12 +1,12 @@
 @font-face {
 	font-family: "fonts";
 	src: url("../../fonts/fonts.eot"); /* IE9 */
-	src: url("../../fonts/fonts.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+	src: url("../../fonts/fonts.eot?#iefix") format("embedded-opentype");
 
-	url("../../fonts/fonts.woff") format("woff"), /* chrome、firefox */
-	url("../../fonts/fonts.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
+	url:("../../fonts/fonts.woff") format("woff"); /* chrome、firefox */
+	url:("../../fonts/fonts.ttf") format("truetype");/*chrome firefox opera Safari Android iOS 4.2 */
 
-	url("../../fonts/fonts.svg#fonts") format("svg"); /* iOS 4.1- */
+	url:("../../fonts/fonts.svg#fonts") format("svg"); /* iOS 4.1- */
 	font-style: normal;
 	font-weight: bold;
 }
@@ -39,13 +39,22 @@
 				float: left;
 				margin-right: 54.5px;
 				margin-left: 45px;
+				position:relative;
+				overflow:hidden;
+				div.overlay{
+					position:absolute;
+					width:200px;
+					height:259px;
+					top:259px;
+					background:rgba(236,128,128,0.4);
+				}
 			}
 
 		}
 
 		.sword {
 			margin: 0px auto;
-			background: url(../../images/sword_init.png) center/100% no-repeat;
+			background: url(../../images/sword1.png) center/100% no-repeat;
 			height: 508px;
 		}
 
