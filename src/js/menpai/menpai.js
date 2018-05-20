@@ -58,6 +58,10 @@ const App = function() {
 	imgArr.push(require("../../images/item2red.png"));
 	imgArr.push(require("../../images/item3red.png"));
 	imgArr.push(require("../../images/item4red.png"));
+	imgArr.push(require("../../images/sword1.png"));
+	imgArr.push(require("../../images/sword2.png"));
+	imgArr.push(require("../../images/sword3.png"));
+	imgArr.push(require("../../images/sword4.png"));
 
 	//选择门派
 	mps.click(function(e) {
@@ -274,18 +278,19 @@ const App = function() {
 			$cloverlay.css("top", 259 * (1 - cl_percent) + "px");
 			$twoverlay.css("top", 259 * (1 - tw_percent) + "px");
 			if (sum >= 1000 && sum < 2000) {
-				$(".sword").css("background-image", "url(../img/sword2.png)");
+				$(".sword").css("background-image", "url(../img/sword1.png)");
 			}
 			if (sum >= 2000 && sum < 3000) {
-				$(".sword").css("background-image", "url(../img/sword3.png)");
+				$(".sword").css("background-image", "url(../img/sword2.png)");
 			}
-			if (sum >= 3000 ) {
+			if (sum >= 3000 && sum < 4000) {
+				$(".sword").css("background-image","url(../img/sword3.png)");
+			}if (sum >= 4000) {
 				$(".sword").css("background-image","url(../img/sword4.png)");
 			}
 		}, function(res) {
 
 		});
-
 	})();
 
 };

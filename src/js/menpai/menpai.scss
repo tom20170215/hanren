@@ -1,14 +1,14 @@
 @font-face {
-	font-family: "fonts";
-	src: url("../../fonts/fonts.eot"); /* IE9 */
-	src: url("../../fonts/fonts.eot?#iefix") format("embedded-opentype");
-
-	url:("../../fonts/fonts.woff") format("woff"); /* chrome、firefox */
-	url:("../../fonts/fonts.ttf") format("truetype");/*chrome firefox opera Safari Android iOS 4.2 */
-
-	url:("../../fonts/fonts.svg#fonts") format("svg"); /* iOS 4.1- */
-	font-style: normal;
-	font-weight: bold;
+    font-family: "fonts";
+    src: url("../../fonts/fonts.eot"); /* IE9 */
+    src: url("../../fonts/fonts.eot?#iefix") format("embedded-opentype"), 
+    
+    url("../../fonts/fonts.woff") format("woff"), /* chrome、firefox */
+    url("../../fonts/fonts.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
+    
+    url("../../fonts/fonts.svg#fonts") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: bold;
 }
 
 .content2 {
@@ -26,10 +26,7 @@
 			width: 434px;
 			height: 219px;
 			background: url(../../images/btn.png) no-repeat;
-			padding: 0px;
-			border: 0px;
 			margin: 450px 0px 0px 410px;
-			cursor: pointer;
 		}
 
 		.type {
@@ -54,7 +51,7 @@
 
 		.sword {
 			margin: 0px auto;
-			background: url(../../images/sword1.png) center/100% no-repeat;
+			background: url(../../images/sword_init.png) center/100% no-repeat;
 			height: 508px;
 		}
 
@@ -79,7 +76,6 @@
 				height: 50px;
 				padding: 0px;
 				margin: 0px;
-				cursor: pointer;
 				float: right;
 				background-color: transparent;
 
@@ -135,15 +131,26 @@
 
 			input::-webkit-input-placeholder {
 				color: #BABABA;
-				font-weight:bold;
+				font:{
+					family:fonts;
+					weight:bold;
+				}
 			}
 
 			input::-moz-input-placeholder {
 				color: #BABABA;
+				font:{
+					family:fonts;
+					weight:bold;
+				}				
 			}
 
 			input::-ms-input-placeholder {
 				color: #BABABA;
+				font:{
+					family:fonts;
+					weight:bold;
+				}				
 			}
 
 			button {

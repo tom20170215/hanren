@@ -12,58 +12,62 @@
 		overflow: hidden;
 
 		.box {
-			width:744px;
-			background:url(../../images/swiperbg.png) no-repeat center;
-			margin-top:300px;
-			margin-left:50px;
+			width: 744px;
+			background: url(../../images/swiperbg.png) no-repeat center;
+			margin-top: 300px;
+			margin-left: 50px;
+
 			.swiper-container {
 				width: 560px;
 				height: 379px;
 				margin: 0;
-				top:50px;
-				left:70px;
+				top: 50px;
+				left: 70px;
+
 				.swiper-pagination-bullets {
-					span{
+					span {
 						margin: 0 17px 0 1px;
-						position:relative;
-						&:after{
-							content:"";
-							display:inline-block;
-							width:31px;
-							height:7px;
-							background:url(../../images/circle.png) center no-repeat;
-							position:absolute;
-							top:12px;
+						position: relative;
+						display: inline-block;
+						width: 32px;
+						height: 32px;
+
+						&:after {
+							content: "";
+							display: inline-block;
+							width: 31px;
+							height: 7px;
+							background: url(../../images/circle.png) center no-repeat;
+							position: absolute;
+							top: 12px;
 							left: 25px;
 						}
-						&:first-child:before{
-							content:"";
-							display:inline-block;
-							width:31px;
-							height:7px;
-							background:url(../../images/circle.png) center no-repeat;
-							position:absolute;
-							top:12px;
+
+						&:first-child:before {
+							content: "";
+							display: inline-block;
+							width: 31px;
+							height: 7px;
+							background: url(../../images/circle.png) center no-repeat;
+							position: absolute;
+							top: 12px;
 							left: -24px;
 						}
-						&:hover{
-							cursor:pointer;
+
+						&:hover {
+							cursor: pointer;
 						}
+
 					}
+
 				}
 
 				.black {
-					width: 32px;
-					height: 32px;
 					background: url(../../images/noactive.png);
-					display: inline-block;
 				}
 
 				.red {
-					width: 32px;
-					height: 32px;
 					background: url(../../images/active.png);
-					display: inline-block;
 				}
 
 			}
