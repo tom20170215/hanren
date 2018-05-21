@@ -27,21 +27,20 @@
 				width:468px;
 				height:308px;
 				position:relative;
-				&:first-child{
-					background:url(../../images/videobox1.png) no-repeat ;
-				}
-				&:nth-child(2){
-					width:524px;
-					height:310px;
-					background:url(../../images/videobox2.png) no-repeat;
-				}
-				&:nth-child(3){
-					background:url(../../images/videobox3.png) no-repeat;
-				}
+				background:url(../../images/videobox.png) no-repeat ;
+				text-align:center;		
 				iframe{
 					position:absolute;
 					top:17px;
 					left:46px;
+				}
+				p{
+					margin-top:260px;
+					font:{
+						weight:bold;
+						family:fonts;
+						size:30px;
+					}
 				}
 			}
 
