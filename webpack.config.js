@@ -4,9 +4,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const extractSass = new ExtractTextPlugin({
-	filename: "css/[name][chunkhash:8].css",
+	filename: "[name][chunkhash:8].css",
 	disable: process.env.NODE_ENV === "development"
 });
+
 
 module.exports = env => {
 	if (!env) {
@@ -50,13 +51,10 @@ module.exports = env => {
 		},
 		devServer: {
 			contentBase: './dist',
-			// hot: true,
 			compress: true,
 			inline:true,
 			port: 9200,
 			host:"192.168.1.134"
-			// clientLogLevel: 'none'
-			// quiet: true
 		},
 		module: {
 			rules: [{
@@ -78,8 +76,7 @@ module.exports = env => {
 					loader: 'url-loader',
 					options: {
 						limit: 1024,
-						name: 'img/[name].[ext]',
-						publicPath: '../'
+						name: 'img/[name].[ext]'
 					}
 				}]
 			},{

@@ -67,53 +67,56 @@ const App = function() {
 	mps.click(function(e) {
 		var e = e || window.event;
 		var target = e.target || e.srcElement;
+
 		if (target.nodeName.toLocaleLowerCase() == 'img') {
+
 			switch (target.className) {
 				case "xuanshui":
-					if (target.getAttribute("src") == "../img/item1.png") {
-						target.setAttribute("src", "../img/item1red.png");
-						$(".qiyun").attr("src", "../img/item2.png");
-						$(".chilong").attr("src", "../img/item3.png");
-						$(".tianwei").attr("src", "../img/item4.png");
+					if (target.getAttribute("src") == "img/item1.png") {
+
+						target.setAttribute("src", "img/item1red.png");
+						$(".qiyun").attr("src", "img/item2.png");
+						$(".chilong").attr("src", "img/item3.png");
+						$(".tianwei").attr("src", "img/item4.png");
 						type = 100;
 					} else {
-						target.setAttribute("src", "../img/item1.png");
+						target.setAttribute("src", "img/item1.png");
 						type = 0;
 					}
 					break;
 				case "qiyun":
-					if (target.getAttribute("src") == "../img/item2.png") {
-						target.setAttribute("src", "../img/item2red.png");
-						$(".xuanshui").attr("src", "../img/item1.png");
-						$(".chilong").attr("src", "../img/item3.png");
-						$(".tianwei").attr("src", "../img/item4.png");
+					if (target.getAttribute("src") == "img/item2.png") {
+						target.setAttribute("src", "img/item2red.png");
+						$(".xuanshui").attr("src", "img/item1.png");
+						$(".chilong").attr("src", "img/item3.png");
+						$(".tianwei").attr("src", "img/item4.png");
 						type = 200;
 					} else {
-						target.setAttribute("src", "../img/item2.png");
+						target.setAttribute("src", "img/item2.png");
 						type = 0;
 					}
 					break;
 				case "chilong":
-					if (target.getAttribute("src") == "../img/item3.png") {
-						target.setAttribute("src", "../img/item3red.png");
-						$(".xuanshui").attr("src", "../img/item1.png");
-						$(".qiyun").attr("src", "../img/item2.png");
-						$(".tianwei").attr("src", "../img/item4.png");
+					if (target.getAttribute("src") == "img/item3.png") {
+						target.setAttribute("src", "img/item3red.png");
+						$(".xuanshui").attr("src", "img/item1.png");
+						$(".qiyun").attr("src", "img/item2.png");
+						$(".tianwei").attr("src", "img/item4.png");
 						type = 300;
 					} else {
-						target.setAttribute("src", "../img/item3.png");
+						target.setAttribute("src", "img/item3.png");
 						type = 0;
 					}
 					break;
 				case "tianwei":
-					if (target.getAttribute("src") == "../img/item4.png") {
-						target.setAttribute("src", "../img/item4red.png");
-						$(".xuanshui").attr("src", "../img/item1.png");
-						$(".qiyun").attr("src", "../img/item2.png");
-						$(".chilong").attr("src", "../img/item3.png");
+					if (target.getAttribute("src") == "img/item4.png") {
+						target.setAttribute("src", "img/item4red.png");
+						$(".xuanshui").attr("src", "img/item1.png");
+						$(".qiyun").attr("src", "img/item2.png");
+						$(".chilong").attr("src", "img/item3.png");
 						type = 400;
 					} else {
-						target.setAttribute("src", "../img/item4.png");
+						target.setAttribute("src", "img/item4.png");
 						type = 0;
 					}
 					break;
@@ -250,25 +253,25 @@ const App = function() {
 			tw = res.person[400];
 			if (xs === undefined) {
 				xs = 0;
-			}else if (xs > xsNum) {
+			} else if (xs > xsNum) {
 				xs = xsNum;
 			}
 			if (qy === undefined) {
 				qy = 0;
-			}else if (qy > qyNum) {
+			} else if (qy > qyNum) {
 				qy = qyNum;
-			}	
+			}
 			if (cl === undefined) {
 				cl = 0;
-			}else if (cl > clNum) {
+			} else if (cl > clNum) {
 				cl = clNum;
 			}
 			if (tw === undefined) {
 				tw = 0;
-			}else if (tw > twNum) {
+			} else if (tw > twNum) {
 				tw = twNum;
 			}
-			var sum = xs +qy + cl + tw;
+			var sum = xs + qy + cl + tw;
 			xs_percent = xs / xsNum;
 			qy_percent = qy / qyNum;
 			cl_percent = cl / clNum;
@@ -284,9 +287,10 @@ const App = function() {
 				$(".sword").css("background-image", "url(../img/sword2.png)");
 			}
 			if (sum >= 3000 && sum < 4000) {
-				$(".sword").css("background-image","url(../img/sword3.png)");
-			}if (sum >= 4000) {
-				$(".sword").css("background-image","url(../img/sword4.png)");
+				$(".sword").css("background-image", "url(../img/sword3.png)");
+			}
+			if (sum >= 4000) {
+				$(".sword").css("background-image", "url(../img/sword4.png)");
 			}
 		}, function(res) {
 
